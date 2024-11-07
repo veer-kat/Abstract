@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_bg"
+    android:padding="16dp">
+
+        <!-- Home icon -->
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_home"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- SeekBar -->
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:padding="8dp" />
+
+        <!-- Current Time TextView -->
+        <TextView
+            android:id="@+id/currentTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_toStartOf="@id/seekBar"
+            android:layout_marginEnd="8dp"
+            android:layout_above="@id/playPauseButton"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/bebas"
+            android:textColor="@color/black"
+            android:visibility="visible"/>
+
+        <!-- Total Time TextView -->
+        <TextView
+            android:id="@+id/totalTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:00"
+            android:layout_toEndOf="@id/seekBar"
+            android:layout_marginStart="8dp"
+            android:layout_above="@id/playPauseButton"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/bebas"
+            android:textColor="@color/black"
+            android:visibility="visible"/>
+
+        <!-- Play/Pause Button -->
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_play"
+            android:background="@null"
+            android:contentDescription="Play Button" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/playPauseButton"
+            android:layout_marginBottom="-50dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/bebas"
+            android:text="Next"
+            android:textColor="@color/black" />
+
+</RelativeLayout>

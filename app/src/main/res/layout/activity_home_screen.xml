@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_bg"
+    tools:context=".HomeScreen">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:paddingTop="16dp"
+        android:text="Aboard Sailors?"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Personalised Timer Button -->
+    <LinearLayout
+        android:id="@+id/personalized_timer_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:onClick="openFocusTimerScreen">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/timer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Personalised Timer"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Progress & Analytics Button -->
+    <LinearLayout
+        android:id="@+id/progress_analytics_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/personalized_timer_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/progress"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Progress and Analytics"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Distraction Management Tool Button -->
+    <LinearLayout
+        android:id="@+id/distraction_management_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/progress_analytics_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:onClick="openBlockControlScreen">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/tool"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Distraction Management Tool"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Cognitive Training Exercises Button -->
+    <LinearLayout
+        android:id="@+id/cognitive_training_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/distraction_management_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:onClick="openGameScreen">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/exercise"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:rotation="45" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Cognitive Training Exercises"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Vigilance Test Button -->
+    <LinearLayout
+        android:id="@+id/vigilance_test_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/cognitive_training_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:onClick="openVigilanceTestScreen">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/exercise"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Vigilance Test"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

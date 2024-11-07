@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_bg"
+    tools:context=".HomeScreen">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:paddingTop="16dp"
+        android:text="Aboard Sailors?"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Memory Mayhem Button -->
+    <LinearLayout
+        android:id="@+id/memory_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/exercise"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:rotation="45"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Memory Mayhem"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Noisy Number Button -->
+    <LinearLayout
+        android:id="@+id/noisy_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/memory_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/timer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Noisy Number"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Chatter Recall Button -->
+    <LinearLayout
+        android:id="@+id/chatter_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/noisy_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/progress"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Chatter Recall"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Sonic Synchdown Button -->
+    <LinearLayout
+        android:id="@+id/sonic_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundbgbutton"
+        app:layout_constraintTop_toBottomOf="@id/chatter_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/tool"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Sonic Synchdown"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/teal"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

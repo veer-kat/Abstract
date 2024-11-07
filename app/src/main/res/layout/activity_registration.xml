@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/abstract_bg"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signup_name"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Name"
+            android:drawablePadding="8dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signup_email"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Email"
+            android:drawablePadding="8dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signup_username"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Username"
+            android:drawablePadding="8dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signup_password"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawablePadding="8dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bebas"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Sign Up"
+            android:id="@+id/signup_button"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="20dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/bebas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginRedirectText"
+            android:text="Already an user? Login Here"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebas"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

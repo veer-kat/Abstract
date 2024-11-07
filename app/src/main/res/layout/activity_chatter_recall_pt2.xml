@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_bg">
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_home" />
+
+    <!-- Score Counter -->
+    <TextView
+        android:id="@+id/scoreCounter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Question Text -->
+
+    <!-- Option Buttons -->
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Why did Aswathama kill   Abhimanyu's child?"
+        android:textAlignment="center"
+        android:textColor="#d3eaf5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/optionsGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionText"
+        android:layout_marginTop="281dp"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:rowCount="2"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:backgroundTint="#b3d3e0"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#1a5072"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#b3d3e0"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#1a5072"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:backgroundTint="#b3d3e0"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#1a5072"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#b3d3e0"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#1a5072"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+</RelativeLayout>
